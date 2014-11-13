@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.site {
+  }
+  
+.site-header {
+  background: tomato;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  }
+  
+.site-content {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  }
+  
+.content-area {
+  background: deepskyblue;
+  padding: 20px;
+  flex: 2 0 66%;
+  }
+  
+.sidebar {
+  background: gold;
+  padding: 20px;
+  flex: 1 0 33%;
+  }
+    
+.site-footer {
+  background: green;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  }
+  
