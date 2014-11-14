@@ -411,18 +411,23 @@ html {
      -moz-box-orient: vertical;
      -moz-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media all and (min-width: 46.8em) {
     .site-header {
       background: lightblue; } }
   @media all and (min-width: 50em) {
     .site-header {
-      background: tomato;
-      -webkit-flex-direction: row;
-         -moz-box-orient: horizontal;
-         -moz-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
+      background: tomato; } }
+
+.site-header .site-branding {
+  background: lightcoral; }
+
+.site-header .main-navigation {
+  background: lightcoral; }
 
 .site-content {
   display: -webkit-flex;

@@ -9,15 +9,13 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-.site {
-  }
   
 .site-header {
   background: lightcoral;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   
     @media all and (min-width: $med) {
       background: lightblue;
@@ -25,8 +23,15 @@ html {
       
     @media all and (min-width: $large) {
       background: tomato;
-      flex-direction: row;
       }
+  }
+  
+.site-header .site-branding {
+  background: lightcoral;
+  }
+  
+.site-header .main-navigation {
+  background: lightcoral;
   }
   
 .site-content {
