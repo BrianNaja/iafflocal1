@@ -1,3 +1,8 @@
+$small: 24em;
+$med: 48em;
+$large: 55em;
+$xl: 73em;
+
 // Frameworks
 
 @import "normalize-v3.0.1.scss";
@@ -5,4 +10,5 @@
 
 // scss folder
 
-@import "global.scss";
+@import "typography.scss";
+@import "layout.scss";

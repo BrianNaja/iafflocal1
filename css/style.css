@@ -354,43 +354,71 @@ td,
 th {
   padding: 0; }
 
-html,
-button,
-input,
-select,
-textarea {
-  color: #484848; }
+body {
+  font-family: 'Ubuntu', sans-serif; }
 
-textarea {
-  /*Allow only vertical resizing of textareas.*/
-  resize: vertical; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Candal', sans-serif;
+  margin: 10px; }
+
+p, a, span {
+  padding: 0;
+  font-style: normal;
+  text-align: left;
+  font-size: 16px;
+  line-height: 22px; }
+  @media all and (min-width: 48em) {
+    p, a, span {
+      font-size: 22px;
+      line-height: 30px; } }
+
+.site-title a {
+  font-size: 30px;
+  text-decoration: none; }
+  @media all and (min-width: 50em) {
+    .site-title a {
+      font-size: 42px; } }
+  @media all and (min-width: 60em) {
+    .site-title a {
+      font-size: 66px; } }
+
+.main-navigation ul {
+  list-style: none; }
+  .main-navigation ul li a {
+    text-decoration: none; }
 
 body {
-  /* 1em is equal to 16px */
-  font-size: 1em;
-  line-height: 1.4; }
+  font-family: 'Ubuntu', sans-serif; }
 
-h1 {
-  font-size: 2em; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Candal', sans-serif;
+  margin: 10px; }
 
-h2 {
-  font-size: 1.5em; }
+p, a, span {
+  padding: 0;
+  font-style: normal;
+  text-align: left;
+  font-size: 16px;
+  line-height: 22px; }
+  @media all and (min-width: 48em) {
+    p, a, span {
+      font-size: 22px;
+      line-height: 30px; } }
 
-ul, ol, p {
-  font-size: 1em;
-  line-height: 1.4; }
-
-li {
-  margin-left: .125em; }
-
-a {
-  color: #397eff;
+.site-title a {
+  font-size: 30px;
   text-decoration: none; }
+  @media all and (min-width: 50em) {
+    .site-title a {
+      font-size: 42px; } }
+  @media all and (min-width: 60em) {
+    .site-title a {
+      font-size: 66px; } }
 
-blockquote {
-  color: #838383;
-  border-left: 2px solid #838383;
-  padding-left: 1em; }
+.main-navigation ul {
+  list-style: none; }
+  .main-navigation ul li a {
+    text-decoration: none; }
 
 html {
   -moz-box-sizing: border-box;
@@ -400,9 +428,8 @@ html {
   -moz-box-sizing: inherit;
        box-sizing: inherit; }
 
-.site-header {
+.site-branding {
   background: lightcoral;
-  padding: 20px;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
@@ -416,18 +443,40 @@ html {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media all and (min-width: 46.8em) {
-    .site-header {
+  @media all and (min-width: 48em) {
+    .site-branding {
       background: lightblue; } }
-  @media all and (min-width: 50em) {
-    .site-header {
+  @media all and (min-width: 55em) {
+    .site-branding {
       background: tomato; } }
 
-.site-header .site-branding {
-  background: lightcoral; }
+.site-title {
+  margin-top: 4px; }
+  @media all and (min-width: 48em) {
+    .site-title {
+      margin-top: 14px; } }
+  @media all and (min-width: 55em) {
+    .site-title {
+      margin-top: 24px; } }
 
-.site-header .main-navigation {
-  background: lightcoral; }
+.main-navigation ul {
+  background: yellow;
+  padding: 0px 40px;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .main-navigation ul li a {
+    margin-right: 20px; }
 
 .site-content {
   display: -webkit-flex;
@@ -440,7 +489,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px; }
-  @media all and (min-width: 50em) {
+  @media all and (min-width: 55em) {
     .site-content {
       -webkit-flex-direction: row;
          -moz-box-orient: horizontal;
@@ -455,10 +504,10 @@ html {
      -moz-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
-  @media all and (min-width: 46.8em) {
+  @media all and (min-width: 48em) {
     .content-area {
       background: lightblue; } }
-  @media all and (min-width: 50em) {
+  @media all and (min-width: 55em) {
     .content-area {
       -webkit-flex: 2 0 66%;
          -moz-box-flex: 2;
@@ -473,10 +522,10 @@ html {
      -moz-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
-  @media all and (min-width: 46.8em) {
+  @media all and (min-width: 48em) {
     .sidebar {
       background: lightblue; } }
-  @media all and (min-width: 50em) {
+  @media all and (min-width: 55em) {
     .sidebar {
       -webkit-flex: 1 0 33%;
          -moz-box-flex: 1;
@@ -496,10 +545,10 @@ html {
      -moz-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media all and (min-width: 46.8em) {
+  @media all and (min-width: 48em) {
     .site-footer {
       background: lightblue; } }
-  @media all and (min-width: 50em) {
+  @media all and (min-width: 55em) {
     .site-footer {
       -webkit-flex-direction: row;
          -moz-box-orient: horizontal;

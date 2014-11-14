@@ -1,8 +1,3 @@
-$small: 24em;
-$med: 46.8em;
-$large: 50em;
-$xl: 73em;
-
 html {
   box-sizing: border-box;
 }
@@ -10,9 +5,8 @@ html {
   box-sizing: inherit;
 }
   
-.site-header {
+.site-branding {
   background: lightcoral;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,14 +20,29 @@ html {
       }
   }
   
-.site-header .site-branding {
-  background: lightcoral;
-  }
+.site-title {
+  margin-top: 4px;
   
-.site-header .main-navigation {
-  background: lightcoral;
+  @media all and (min-width: $med) {
+      margin-top: 14px;
+      }
+      
+    @media all and (min-width: $large) {
+      margin-top: 24px;
+      }
   }
-  
+
+.main-navigation ul {
+  background: yellow;
+  padding: 0px 40px; // resets webkit padding
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+   li a {
+     margin-right: 20px;
+     }
+  }
+    
 .site-content {
   display: flex;
   flex-direction: column;
