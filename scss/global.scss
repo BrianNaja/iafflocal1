@@ -1,3 +1,8 @@
+$small: 24em;
+$med: 46.8em;
+$large: 50em;
+$xl: 73em;
+
 html {
   box-sizing: border-box;
 }
@@ -9,34 +14,84 @@ html {
   }
   
 .site-header {
-  background: tomato;
+  background: lightcoral;
   padding: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  
+    @media all and (min-width: $med) {
+      background: lightblue;
+      }
+      
+    @media all and (min-width: $large) {
+      background: tomato;
+      flex-direction: row;
+      }
   }
   
 .site-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 20px;
+  
+    @media all and (min-width: $large) {
+      flex-direction: row;
+      }
   }
   
 .content-area {
-  background: deepskyblue;
+  background: lightcoral;
   padding: 20px;
-  flex: 2 0 66%;
+  flex: 1;
+  
+    @media all and (min-width: $med) {
+      background: lightblue;
+      }
+      
+    @media all and (min-width: $large) {
+      flex: 2 0 66%;
+      background: deepskyblue;
+      }
   }
   
 .sidebar {
-  background: gold;
+  background: lightcoral;
   padding: 20px;
-  flex: 1 0 33%;
+  flex: 1;
+  
+    @media all and (min-width: $med) {
+      background: lightblue;
+      }
+      
+    @media all and (min-width: $large) {
+      flex: 1 0 33%;
+      background: goldenrod;
+      }
   }
     
 .site-footer {
-  background: green;
+  background: lightcoral;
   padding: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  
+    @media all and (min-width: $med) {
+      background: lightblue;
+      }
+      
+    @media all and (min-width: $large) {
+      flex-direction: row;
+      background: lightgreen;
+      }
   }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
