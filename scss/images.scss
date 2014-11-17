@@ -1,0 +1,26 @@
+//images
+
+.entry-content img {
+  max-width: 100%;
+  height: auto;
+  }
+
+.alignleft {
+  float: left;
+  margin: 10px 10px 10px 0px;
+  }
+  
+.alignright {
+  float: right;
+  margin: 10px 10px 10px 10px;
+  }
+  
+.aligncenter {
+  margin: 10px auto 10px auto;
+  display: block;
+  }
+  
+.alignnone {
+  display: block;
+  margin: 10px 0px;
+  }

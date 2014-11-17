@@ -1,22 +1,29 @@
+//layout
+
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+body {
+  background: $darkCharcoal;
+  }
   
 .site-branding {
-  background: lightcoral;
+  background: $red;
   display: flex;
   flex-direction: column;
   align-items: center;
   
     @media all and (min-width: $med) {
-      background: lightblue;
+      
       }
       
     @media all and (min-width: $large) {
-      background: tomato;
+      
       }
   }
   
@@ -32,21 +39,20 @@ html {
       }
   }
 
-.main-navigation ul {
-  background: yellow;
-  padding: 0px 40px; // resets webkit padding
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-   li a {
-     margin-right: 20px;
-     }
+article {
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  border-bottom: 8px solid $darkCharcoal;
   }
     
 .site-content {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
+  
+    @media all and (min-width: $med) {
+      padding: 20px;
+      }
   
     @media all and (min-width: $large) {
       flex-direction: row;
@@ -54,48 +60,48 @@ html {
   }
   
 .content-area {
-  background: lightcoral;
-  padding: 20px;
+  background: $clouds;
+  padding: 10px;
   flex: 1;
   
     @media all and (min-width: $med) {
-      background: lightblue;
+      padding: 20px;
       }
       
     @media all and (min-width: $large) {
       flex: 2 0 66%;
-      background: deepskyblue;
+      
       }
   }
   
 .sidebar {
-  background: lightcoral;
+  background: $clouds;
   padding: 20px;
   flex: 1;
   
     @media all and (min-width: $med) {
-      background: lightblue;
+      
       }
       
     @media all and (min-width: $large) {
       flex: 1 0 33%;
-      background: goldenrod;
+      
       }
   }
     
 .site-footer {
-  background: lightcoral;
+  background: $red;
   padding: 20px;
   display: flex;
   flex-direction: column;
   
     @media all and (min-width: $med) {
-      background: lightblue;
+      
       }
       
     @media all and (min-width: $large) {
       flex-direction: row;
-      background: lightgreen;
+      
       }
   }
   

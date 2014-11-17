@@ -1,0 +1,63 @@
+//Navigation
+
+.menu-link {
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 20px 20px 10px 2px;
+        
+    @media all and (min-width: $large) {
+      display: none;
+      }
+  }
+
+.main-navigation ul {
+  padding: 0px 0px 0px 20px; // resets webkit padding
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+    li {
+      padding: 14px 0px;
+      border-bottom: 1px inset $clouds;
+     }
+    li a {
+      margin-right: 20px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      }
+     
+  @media all and (min-width: $med) {
+      
+      }
+      
+  @media all and (min-width: $large) {
+      flex-direction: row;
+      justify-content: flex-start;
+        li {
+          padding: 0px;
+          border: none;
+         }
+      }
+  }
+ 
+.hide {
+  display: none;
+     
+  @media all and (min-width: $large) {
+      display: inline;
+      }
+  }
+
+.show {
+  display: inline;
+  }
+   
+
+  
+  
+  
+  
+  
+  

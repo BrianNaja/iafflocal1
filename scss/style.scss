@@ -1,3 +1,13 @@
+//Style
+
+//colors
+$red: #c0392b;
+$belize: #2980b9;
+$clouds: #ecf0f1;
+$silver: #7f8c8d;
+$darkCharcoal: #292929;
+
+//break points
 $small: 24em;
 $med: 48em;
 $large: 55em;
@@ -12,3 +22,5 @@ $xl: 73em;
 
 @import "typography.scss";
 @import "layout.scss";
+@import "navigation.scss";
+@import "images.scss";

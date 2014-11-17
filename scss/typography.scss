@@ -1,41 +1,102 @@
+//typography
+
 body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
   }
   
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Candal', sans-serif;
-  margin: 10px;
+  color: $darkCharcoal;
+  line-height: 1em;
+  margin: 10px 0px 14px 0px;
   }
 
-p, a, span {
+p, li, span, a {
   padding: 0;
   font-style: normal;
+  color: $darkCharcoal;
   text-align: left;
-  font-size: 16px;
-  line-height: 22px;
     
     @media all and (min-width: $med) {
-      font-size: 22px;
-      line-height: 30px;
+      font-size: 1.3rem;
+      line-height: 1.4em;
       }
-  } 
+  }
+  
+a, a:visited {
+  color: darken($belize, 10%);
+  text-decoration: none;
+  }
+  
+a:hover {
+  color: lighten($belize, 5%);  
+  }
+  
+a:active {
+  color: darken($belize, 30%);
+  }
+
+.main-navigation a {
+  color: $clouds;
+    &:hover {
+      color: darken($clouds, 30%);
+      }
+    &:active {
+      color: darken($clouds, 30%);
+      }
+  }
+  
+.site-header .menu-link {
+  color: $clouds;
+  }
+
+.site-title {
+  padding-left: 20px;
+  }
 
 .site-title a {
-  font-size: 30px;
+  font-size: 1.15em;
+  line-height: 1em;
+  text-decoration: none;
+  color: $clouds;
+  
+    @media all and (min-width: 50em) {
+      font-size: 1.5em;
+      }
+      
+    @media all and (min-width: 62em) {
+      font-size: 2em;
+      }
+  }
+  
+.site-description {
+  color: $clouds;
+  }
+  
+.entry-title a {
+  color: $darkCharcoal;
+    font-size: 1em;
+  line-height: 1em;
   text-decoration: none;
   
     @media all and (min-width: 50em) {
-      font-size: 42px;
+      font-size: 1.2em;
+      line-height: 1.2em;
       }
       
-@media all and (min-width: 60em) {
-      font-size: 66px;
+    @media all and (min-width: 60em) {
+      //font-size: 46px;
       }
   }
   
-.main-navigation ul {
-    list-style: none;
-      li a {
-        text-decoration: none;
-        }
+footer .site-info a {
+  color: $clouds;
   }
+  
+  
+  
+  
+  
+  
