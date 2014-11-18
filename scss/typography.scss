@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 p, li, span, a {
   padding: 0;
   font-style: normal;
-  color: $darkCharcoal;
+  color: #4a4a4a;
   text-align: left;
     
     @media all and (min-width: $med) {
@@ -35,7 +35,8 @@ a:hover {
   }
   
 a:active {
-  color: darken($belize, 30%);
+  color: darken($belize, 10%);
+  text-decoration: underline;
   }
   
 blockquote {

@@ -368,7 +368,7 @@ h1, h2, h3, h4, h5, h6 {
 p, li, span, a {
   padding: 0;
   font-style: normal;
-  color: #292929;
+  color: #4a4a4a;
   text-align: left; }
   @media all and (min-width: 48em) {
     p, li, span, a {
@@ -383,7 +383,8 @@ a:hover {
   color: #2e8ece; }
 
 a:active {
-  color: #0d293c; }
+  color: #20638f;
+  text-decoration: underline; }
 
 blockquote {
   border-left: 2px solid black;
@@ -444,7 +445,7 @@ h1, h2, h3, h4, h5, h6 {
 p, li, span, a {
   padding: 0;
   font-style: normal;
-  color: #292929;
+  color: #4a4a4a;
   text-align: left; }
   @media all and (min-width: 48em) {
     p, li, span, a {
@@ -459,7 +460,8 @@ a:hover {
   color: #2e8ece; }
 
 a:active {
-  color: #0d293c; }
+  color: #20638f;
+  text-decoration: underline; }
 
 blockquote {
   border-left: 2px solid black;
@@ -620,6 +622,11 @@ article {
           -ms-flex-direction: row;
               flex-direction: row; } }
 
+.comments-area {
+  background: #cfd9db;
+  padding: 20px 40px 20px 20px;
+  margin-top: 20px; }
+
 .menu-link {
   font-size: 2em;
   display: -webkit-flex;
@@ -750,8 +757,30 @@ iframe {
 
 .search-submit {
   line-height: 1.6em;
-  background: #ecf0f1;
+  background: #292929;
+  color: #ecf0f1;
   border: 1px solid #cdc3c3;
-  border-radius: 2px; }
+  border-radius: 2px;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
   .search-submit:hover {
-    background: #94aab0; }
+    background: #ecf0f1;
+    color: #292929; }
+
+.form-allowed-tags {
+  display: none; }
+
+.form-submit input {
+  line-height: 1.6em;
+  background: #292929;
+  color: #ecf0f1;
+  border: 1px solid #cdc3c3;
+  border-radius: 2px;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
+  .form-submit input:hover {
+    background: #ecf0f1;
+    color: #292929; }
+
+.comment-form-comment textarea {
+  display: block; }
