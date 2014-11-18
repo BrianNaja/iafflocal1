@@ -385,6 +385,10 @@ a:hover {
 a:active {
   color: #0d293c; }
 
+blockquote {
+  border-left: 2px solid black;
+  padding-left: 8px; }
+
 .main-navigation a {
   color: #ecf0f1; }
   .main-navigation a:hover {
@@ -456,6 +460,10 @@ a:hover {
 
 a:active {
   color: #0d293c; }
+
+blockquote {
+  border-left: 2px solid black;
+  padding-left: 8px; }
 
 .main-navigation a {
   color: #ecf0f1; }
@@ -701,3 +709,49 @@ article {
 .alignnone {
   display: block;
   margin: 10px 0px; }
+
+iframe {
+  width: 280px;
+  height: 158px; }
+  @media all and (min-width: 48em) {
+    iframe {
+      width: 480px;
+      height: 271px; } }
+  @media all and (min-width: 62em) {
+    iframe {
+      width: 620px;
+      height: 350px; } }
+
+.embed-vimeo, .embed-youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 0px;
+  /*to remove the black bars*/
+  height: 0;
+  margin: 20px 0px;
+  /*to add space for Disqus comments*/ }
+
+.embed-vimeo iframe, .embed-youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.search-field {
+  border: 1px solid #cdc3c3;
+  line-height: 1.8em;
+  border-radius: 2px;
+  padding-left: 6px; }
+
+.screen-reader-text {
+  display: none; }
+
+.search-submit {
+  line-height: 1.6em;
+  background: #ecf0f1;
+  border: 1px solid #cdc3c3;
+  border-radius: 2px; }
+  .search-submit:hover {
+    background: #94aab0; }

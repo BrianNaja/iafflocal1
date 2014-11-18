@@ -1,0 +1,32 @@
+//videos
+ 
+iframe {
+  width: 280px;
+  height: 158px;
+   
+    @media all and (min-width: $med) {
+      width: 480px;
+      height: 271px;
+      }
+      
+    @media all and (min-width: 62em) {
+      width: 620px;
+      height: 350px;
+      }
+  }
+ 
+.embed-vimeo, .embed-youtube {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 0px; /*to remove the black bars*/
+  height: 0;
+  margin: 20px 0px; /*to add space for Disqus comments*/
+  }
+
+.embed-vimeo iframe, .embed-youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }

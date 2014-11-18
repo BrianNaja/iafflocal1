@@ -37,7 +37,12 @@ a:hover {
 a:active {
   color: darken($belize, 30%);
   }
-
+  
+blockquote {
+  border-left: 2px solid black;
+  padding-left: 8px;
+  }
+  
 .main-navigation a {
   color: $clouds;
     &:hover {
