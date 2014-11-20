@@ -536,7 +536,8 @@ body {
           align-items: center; }
 
 .site-title {
-  margin-top: 4px; }
+  margin: 4px 0px;
+  padding: 0px 20px; }
   @media all and (min-width: 48em) {
     .site-title {
       margin-top: 14px; } }
@@ -648,7 +649,7 @@ article {
       display: none; } }
 
 .main-navigation ul {
-  padding: 0px 0px 0px 20px;
+  padding: 0px;
   list-style: none;
   display: -webkit-flex;
   display: -moz-box;
@@ -673,6 +674,9 @@ article {
        -moz-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  @media all and (min-width: 48em) {
+    .main-navigation ul {
+      padding: 0px 20px 0px 20px; } }
   @media all and (min-width: 55em) {
     .main-navigation ul {
       -webkit-flex-direction: row;

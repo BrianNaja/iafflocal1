@@ -13,10 +13,11 @@
   }
 
 .main-navigation ul {
-  padding: 0px 0px 0px 20px; // resets webkit padding
+  padding: 0px; // resets webkit padding
   list-style: none;
   display: flex;
   flex-direction: column;
+  
     li {
       padding: 14px 0px;
       border-bottom: 1px inset $clouds;
@@ -29,7 +30,7 @@
       }
      
   @media all and (min-width: $med) {
-      
+      padding: 0px 20px 0px 20px;
       }
       
   @media all and (min-width: $large) {

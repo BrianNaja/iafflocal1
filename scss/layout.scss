@@ -28,7 +28,8 @@ body {
   }
   
 .site-title {
-  margin-top: 4px;
+  margin: 4px 0px;
+  padding: 0px 20px;
   
   @media all and (min-width: $med) {
       margin-top: 14px;
